@@ -15,9 +15,18 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+  return 
+    <html>
+       lang="en"
+       suppressingHydrationWarming;
+      <body className={inter.className}>
+      <ThemeProvider
+            attribute="class"
+            defaultTheme="system"
+            enableSystem
+            disableTransitionOnChange
+          >{children}
+          </ThemeProvider>
+          </body>
     </html>
-  );
 }

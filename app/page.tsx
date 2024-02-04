@@ -19,8 +19,6 @@ export default function Home() {
       comm. prompt before I could <b>Finally</b> get this done.
     </p>
     <p>But it feels so good finally being able to do this.</p>
-
-
    </>
   );
 }
